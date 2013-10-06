@@ -1,5 +1,7 @@
 Crumblr::Application.routes.draw do
   
+  resources :posts
+
   root :to => 'pages#welcome'
 
   match 'about' => "pages#about"
