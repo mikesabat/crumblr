@@ -1,5 +1,7 @@
 <h1>Welcome to the App!</h1>
 
-<p>
-	Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.Welcome text goes here.
-</p>
+
+<% @posts.each do |post| %>
+	<%= render 'posts/post', post: post %>
+	<br><br><br><br>
+<% end %>
